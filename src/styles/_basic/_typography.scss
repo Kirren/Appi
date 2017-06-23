@@ -1,0 +1,133 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  section {
+    padding: 2em;
+    @include phone { padding: 1em; }
+    @include desktop { padding: 5em 0; }
+  }
+
+  h1, h2, h3, h4, h5 { margin-bottom: 15px; }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    @include phone { font-size: 32px; }
+    @include tablet { font-size: 48px; }
+    @include desktop { font-size: 54px; }
+    @include largeDesktop { font-size: 90px; }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    @include phone { font-size: 45px; }
+    @include desktop {
+      font:{
+        size: 68px;
+        weight: 700;
+      }
+    }
+  }
+
+  h3 {
+    font:{
+      family: "Open Sans Light";
+      size: 54px;
+      weight: 100;
+    }
+    @include phone { font-size: 36px; }
+  }
+
+  h4 {
+    color: gray;
+    font-weight: 400;
+    line-height: normal;
+    @include phone {
+      font: {
+        size: 16px;
+        weight: 100;
+      }
+    }
+    @include largeDesktop {
+      font: {
+        size: 22px;
+        weight: 400;
+      }
+    }
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font: {
+      size: 16px;
+      weight: 700;
+    };
+  }
+
+  hr { margin-top: 0; }
+
+  .blue-hr {
+    width: 70px;
+    height: 4px;
+    background-color: $accent-color;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rows-wrapper{
+    padding: 0 13em;
+    @include phone { padding: 2em 0; }
+    @include desktop { padding: 0 6em;}
+  }
+
+  .icon, .side-text {
+    @include phone {
+      display: block;
+      margin: 0 auto 10px;
+    }
+    @include tablet { display: inline-block; }
+  }
+
+  .side-text {
+    color: grey;
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .characteristic {
+    margin-bottom: 3em;
+    @include phone { text-align: center; }
+    @include tablet { text-align: left; }
+  }
+
+  img {
+    @include phone { display: none; }
+    @include tablet { display: block; }
+  }
+
+  .header-btn {
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: 15px;
+    a.btn {
+      padding: 20px 14px;
+      color: $black;
+      text-transform: capitalize;
+      line-height: 32px;
+      border-color: transparent;
+      @include phone { margin: 0 auto; }
+      i {
+        @include size(32px);
+        margin-right: 6px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  a:visited, a:hover {
+    color: black;
+  }
+}

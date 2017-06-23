@@ -1,0 +1,12 @@
+section.applink.text-center
+  h3 Available on the App Store
+  h4 Enter your phone number and we’ll send a link to your iPhone
+  div.container
+    form.form-inline(method="get", action="/")
+      div.form-group.m-auto
+        label.sr-only(for="dropdown-menu") Country Code
+        select.col-12.col-sm-3.form-control#dropdown-menu(required)
+          option(value="1") UA (+380)
+          option(value="2", selected="true") US (+1)
+        input.col-12.col-sm-6.form-control(type="tel", placeholder="Phone number", required)
+        input.col-12.col-sm-3.form-control(type="submit", value="submit")

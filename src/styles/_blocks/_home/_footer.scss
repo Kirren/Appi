@@ -1,0 +1,22 @@
+.footer {
+  @include desktop { padding: 3em 0; }
+  text-align: center;
+  a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0 5px;
+    font: {
+      size: 18px;
+      weight: 700;
+    };
+    &:hover { text-decoration: none; }
+  }
+  .separator {
+    display: inline-block;
+    margin-bottom: -3px;
+    width: 0;
+    height: 18px;
+    border: 1px grey solid;
+  }
+}

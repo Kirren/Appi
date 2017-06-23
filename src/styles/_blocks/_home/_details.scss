@@ -1,0 +1,15 @@
+.details {
+  padding: 2em 2em 0;
+  .details-wrapper {
+    @include largeDesktop { padding: 0 9em; }
+    .rows-wrapper {
+      @include tablet { padding: 2em 0; }
+    }
+    .img-details-phone {
+      @include tablet {
+        margin-left: -7em;
+        -webkit-mask-image: $transparent-mask;
+      }
+    }
+  }
+}

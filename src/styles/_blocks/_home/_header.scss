@@ -1,0 +1,48 @@
+.header{
+  background-attachment: fixed;
+  background-size: cover;
+  height: 35em;
+  overflow: hidden;
+  @include phone-only {
+    padding: 0;
+    text-align: center;
+  }
+  @include desktop { height: 100vh; }
+
+  .foreground {
+    color: white;
+    @include phone { padding: 30% 0; }
+    @include desktop {
+      height: inherit;
+      padding: 30vh 5em;
+    }
+
+    h4 {
+      color: white;
+    }
+    .btn-wrapper {
+      text-align: center;
+      @include desktop { text-align: left; }
+    }
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    z-index: -100;
+    #bg-video {
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// Third Party
+
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+
+
+// Custom
+
+@import "_basic/_basic.scss",
+        /*"_blocks/_about/_about",*/
+        "_blocks/_home/_home";

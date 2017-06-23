@@ -1,0 +1,26 @@
+nav {
+  padding: 1em 4em !important;
+  background-color: white;
+  box-shadow: $shadow;
+  .nav-link { float: right; }
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.about-header {
+  height: 80vh;
+  background: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 55%;
+
+
+  h1 {
+    @include largeDesktop { font-size: 54px; }
+  }
+
+  a.btn {
+    box-shadow: $shadow;
+  }
+}

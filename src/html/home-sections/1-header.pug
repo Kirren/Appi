@@ -1,0 +1,21 @@
+section.header#home
+  div.foreground
+    div.row.mx-auto
+      div.col-xs-12.offset-md-2.col-md-6
+        h1 YOUR APP. REINVENTED.
+        h4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        div.btn-wrapper
+          div.header-btn.col-xs-12
+            a.btn.btn-secondary.btn-lg
+              i.header-play-icon.pull-left
+              | watch video
+          div.header-btn.col-xs-12
+            a.btn.btn-secondary.btn-lg
+              i.header-phone-icon.pull-left
+              | learn more
+  div.video-container
+    video#bg-video(autoplay, loop, muted)
+      source(src="http://blacktie.co/demo/appi/video/appi.mp4", type="video/mp4")
+
+div.down-arrow
+  a(href="#app")
